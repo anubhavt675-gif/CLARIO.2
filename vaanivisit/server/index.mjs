@@ -12,7 +12,7 @@ import { GoogleGenAI } from "@google/genai";
 // Ensure Node uses IPv4 first to avoid IPv6 connection timeouts on Windows
 try {
   dns.setDefaultResultOrder("ipv4first");
-} catch (e) {}
+} catch (e) { }
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -306,10 +306,10 @@ Return ONLY valid JSON. No markdown, no code blocks, no extra text.`;
         follow_up_questions: Array.isArray(parsed.structured_content?.follow_up_questions)
           ? parsed.structured_content.follow_up_questions
           : [
-              "Kya aapko bukhar ke saath sharir me dard ya thand lag rahi hai?",
-              "Kya aapne pehle koi dawa li hai?",
-              "Kya yeh pareshani pehle bhi kabhi hui thi?"
-            ],
+            "Kya aapko bukhar ke saath sharir me dard ya thand lag rahi hai?",
+            "Kya aapne pehle koi dawa li hai?",
+            "Kya yeh pareshani pehle bhi kabhi hui thi?"
+          ],
         clinical_summary: parsed.structured_content?.clinical_summary ?? `Patient reported ${parsed.structured_content?.main_complaint || "symptoms"}.`,
       };
 
@@ -414,10 +414,10 @@ Return ONLY valid JSON. No markdown, no code blocks, no extra text.`;
         follow_up_questions: Array.isArray(parsed.structured_content?.follow_up_questions)
           ? parsed.structured_content.follow_up_questions
           : [
-              "Kya aapko bukhar ke saath sharir me dard ya thand lag rahi hai?",
-              "Kya aapne pehle koi dawa li hai?",
-              "Kya yeh pareshani pehle bhi kabhi hui thi?"
-            ],
+            "Kya aapko bukhar ke saath sharir me dard ya thand lag rahi hai?",
+            "Kya aapne pehle koi dawa li hai?",
+            "Kya yeh pareshani pehle bhi kabhi hui thi?"
+          ],
         clinical_summary: parsed.structured_content?.clinical_summary ?? `Patient reported ${parsed.structured_content?.main_complaint || "symptoms"}.`,
       };
 
@@ -2249,7 +2249,7 @@ app.post("/api/consultations/:id/accept", async (req, res) => {
       assigned_reviewer_id: doctor_id,
       updated_at: new Date().toISOString(),
     }).eq("id", id);
-  } catch (e) {}
+  } catch (e) { }
 
   // Notify patient
   addNotification({
