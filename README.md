@@ -161,14 +161,14 @@ VITE_SUPABASE_URL=https://wlwlbzrfazwtvsboljzp.supabase.co
 VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_IqnTtw8qtmdUHCJHFm2ZbA_hu8qRlXF
 NEXT_PUBLIC_SUPABASE_URL=https://wlwlbzrfazwtvsboljzp.supabase.co
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_IqnTtw8qtmdUHCJHFm2ZbA_hu8qRlXF
-SUPABASE_SECRET_KEY=sb_secret_Kx6UFZ1noCM15ElDOP-dmA_DfsK95Lw
+SUPABASE_SECRET_KEY=sb_secret_Kx6UFZ1noCM15ElDOP_your_secret_key
 
 # Groq AI Integration (Ultra-fast LLM Inference)
-GROQ_API_KEY=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
+GROQ_API_KEY=gsk_your_groq_api_key_here
 GROQ_MODEL=qwen/qwen3.8-27b
 
 # Google Gemini AI Integration (Fallback)
-GEMINI_API_KEY=AQ.Ab8RN6KWm4aWaLCx8wxPmqafLkiulRrjcpNEB2KdOIMKQKuGcw
+GEMINI_API_KEY=your_gemini_api_key_here
 GEMINI_MODEL=gemini-3.5-flash-lite
 
 # Server Configuration
